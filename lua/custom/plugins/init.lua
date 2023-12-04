@@ -6,10 +6,12 @@ local autopairs = require 'custom.plugins.autopairs'
 local theme = require 'custom.plugins.theme'
 local tmux_nvim = require 'custom.plugins.tmux'
 local telescope = require 'custom.plugins.telescope'
+local remaps = require 'custom.plugins.remaps'
 
 return {
   autopairs,
   theme,
   tmux_nvim,
-  telescope
+  telescope,
+  remaps
 }
