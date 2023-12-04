@@ -5,11 +5,11 @@
 local autopairs = require 'custom.plugins.autopairs'
 local theme = require 'custom.plugins.theme'
 local tmux_nvim = require 'custom.plugins.tmux'
-local telescope_fb = require 'custom.plugins.telescope-fb'
+local telescope = require 'custom.plugins.telescope'
 
 return {
   autopairs,
   theme,
   tmux_nvim,
-  telescope_fb
+  telescope
 }
