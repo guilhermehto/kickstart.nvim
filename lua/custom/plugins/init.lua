@@ -2,4 +2,14 @@
 --  I promise not to create any merge conflicts in this directory :)
 --
 -- See the kickstart.nvim README for more information
-return {}
+local autopairs = require 'custom.plugins.autopairs'
+local theme = require 'custom.plugins.theme'
+local tmux_nvim = require 'custom.plugins.tmux'
+local telescope_fb = require 'custom.plugins.telescope-fb'
+
+return {
+  autopairs,
+  theme,
+  tmux_nvim,
+  telescope_fb
+}
