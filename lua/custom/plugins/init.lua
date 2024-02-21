@@ -7,6 +7,7 @@ local theme = require 'custom.plugins.theme'
 local tmux_nvim = require 'custom.plugins.tmux'
 local telescope = require 'custom.plugins.telescope'
 local remaps = require 'custom.plugins.remaps'
+local neoformat = require 'custom.plugins.neoformat'
 
 return {
   autopairs,

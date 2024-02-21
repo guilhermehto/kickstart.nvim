@@ -11,6 +11,8 @@ vim.api.nvim_create_autocmd("LspAttach", {
     nmap('<leader>ct', require('telescope.builtin').lsp_type_definitions, 'Type [D]efinition')
     nmap('<leader>ch', vim.lsp.buf.signature_help, '[C]ode signature [H]elp')
     nmap('<leader>ds', require('telescope.builtin').lsp_document_symbols, '[D]ocument [S]ymbols')
+
+    nmap('<leader>cF', '<cmd>Neoformat<cr>', '[C]ode [F]ormat')
   end,
 })
 return {}
