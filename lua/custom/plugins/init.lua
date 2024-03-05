@@ -2,17 +2,4 @@
 --  I promise not to create any merge conflicts in this directory :)
 --
 -- See the kickstart.nvim README for more information
-local autopairs = require 'custom.plugins.autopairs'
-local theme = require 'custom.plugins.theme'
-local tmux_nvim = require 'custom.plugins.tmux'
-local telescope = require 'custom.plugins.telescope'
-local remaps = require 'custom.plugins.remaps'
-local neoformat = require 'custom.plugins.neoformat'
-
-return {
-  autopairs,
-  theme,
-  tmux_nvim,
-  telescope,
-  remaps
-}
+return {}
