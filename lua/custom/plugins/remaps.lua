@@ -1,6 +1,6 @@
-local nmap = require("custom.utils").nmap
+local nmap = require('custom.utils').nmap
 
-vim.api.nvim_create_autocmd("LspAttach", {
+vim.api.nvim_create_autocmd('LspAttach', {
   callback = function()
     nmap('<leader>cR', vim.lsp.buf.rename, '[C]ode [R]ename')
     nmap('<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ction')
@@ -13,6 +13,9 @@ vim.api.nvim_create_autocmd("LspAttach", {
     nmap('<leader>ds', require('telescope.builtin').lsp_document_symbols, '[D]ocument [S]ymbols')
 
     nmap('<leader>cF', '<cmd>Neoformat<cr>', '[C]ode [F]ormat')
+
+    nmap('<leader>n', '<cmd>:cnext<cr>', '[N]ext quickfix')
+    nmap('<leader>p', '<cmd>:cprev<cr>', '[P]revious quickfix')
   end,
 })
 return {}
