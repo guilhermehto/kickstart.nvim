@@ -16,6 +16,8 @@ vim.api.nvim_create_autocmd('LspAttach', {
 
     nmap('<leader>n', '<cmd>:cnext<cr>', '[N]ext quickfix')
     nmap('<leader>p', '<cmd>:cprev<cr>', '[P]revious quickfix')
+
+    nmap('<leader>gb', '<cmd>:Gitsigns blame_line<cr>', '[G]it [B]lame line')
   end,
 })
 return {}
