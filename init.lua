@@ -664,6 +664,7 @@ require('lazy').setup({
         lua = { 'stylua' },
         javascript = { 'prettier' },
         typescript = { 'prettier' },
+        json = { 'prettier' },
         javascriptreact = { 'prettier' },
         typescriptreact = { 'prettier' },
         go = { 'gofumpt' },
