@@ -6,7 +6,7 @@ return {
   },
   {
     'nvim-neorg/neorg',
-    dependencies = { 'luarocks.nvim' },
+    dependencies = { 'luarocks.nvim', 'folke/zen-mode.nvim' },
     lazy = false, -- Disable lazy loading as some `lazy.nvim` distributions set `lazy = true` by default
     version = '*', -- Pin Neorg to the latest stable release
     config = function()
@@ -14,6 +14,15 @@ return {
         load = {
           ['core.defaults'] = {},
           ['core.concealer'] = {},
+          ['core.mode'] = {},
+          ['core.integrations.treesitter'] = {},
+          ['core.queries.native'] = {},
+          ['core.ui'] = {},
+          ['core.presenter'] = {
+            config = {
+              zen_mode = 'zen-mode',
+            },
+          },
         },
       }
 
