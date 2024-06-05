@@ -665,6 +665,7 @@ require('lazy').setup({
         javascript = { 'prettier' },
         typescript = { 'prettier' },
         json = { 'prettier' },
+        graphql = { 'prettier' },
         javascriptreact = { 'prettier' },
         typescriptreact = { 'prettier' },
         go = { 'gofumpt' },
