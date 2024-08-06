@@ -392,6 +392,9 @@ require('lazy').setup({
           },
           live_grep = {
             path_display = filenameFirst,
+            additional_args = function(opts)
+              return { '--hidden' }
+            end,
           },
           buffers = {
             path_display = filenameFirst,
