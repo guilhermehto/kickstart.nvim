@@ -12,7 +12,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
     nmap('<leader>ch', vim.lsp.buf.signature_help, '[C]ode signature [H]elp')
     nmap('<leader>ds', require('telescope.builtin').lsp_document_symbols, '[D]ocument [S]ymbols')
 
-    nmap('<leader>cF', '<cmd>Neoformat<cr>', '[C]ode [F]ormat')
+    nmap('<leader>cF', require('conform').format, '[C]ode [F]ormat')
 
     nmap('<leader>n', '<cmd>:cnext<cr>', '[N]ext quickfix')
     nmap('<leader>p', '<cmd>:cprev<cr>', '[P]revious quickfix')
