@@ -704,12 +704,15 @@ require('lazy').setup({
         lua = { 'stylua' },
         javascript = { 'prettier' },
         typescript = { 'prettier' },
-        json = { 'prettier' },
+        --        json = { 'prettier' },
         graphql = { 'prettier' },
         javascriptreact = { 'prettier' },
         typescriptreact = { 'prettier' },
+        html = { 'prettier' },
         go = { 'gofumpt' },
         kotlin = { 'ktlint' },
+        sql = { { 'sql-formatter', 'sqlfmt' } },
+        --yaml = { 'yamlfmt' },
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },
         --
