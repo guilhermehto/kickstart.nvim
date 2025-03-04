@@ -5,6 +5,9 @@ return {
   -- or if using mini.icons/mini.nvim
   -- dependencies = { "echasnovski/mini.icons" },
   opts = {
+    winopts = {
+      preview = { layout = 'vertical' },
+    },
     files = {
       git_icons = false,
       file_icons = 'mini',
@@ -28,7 +31,7 @@ return {
     },
     {
       '<leader>ff',
-      '<cmd>FzfLua grep_visual<cr>',
+      '<cmd>FzfLua blines<cr>',
       desc = 'Find visual',
     },
     {
@@ -45,6 +48,11 @@ return {
       '<leader>fdw',
       '<cmd>FzfLua diagnostics_workspace<cr>',
       desc = 'Find resume',
+    },
+    {
+      '<leader>fo',
+      '<cmd>FzfLua oldfiles<cr>',
+      desc = 'Find old files',
     },
   },
 }
