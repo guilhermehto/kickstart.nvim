@@ -54,5 +54,10 @@ return {
       '<cmd>FzfLua oldfiles<cr>',
       desc = 'Find old files',
     },
+    {
+      '<leader>cr',
+      '<cmd>FzfLua lsp_references<cr>',
+      desc = 'Find code references',
+    },
   },
 }
