@@ -1,8 +1,17 @@
-return {
-  "catppuccin/nvim",
-  name = "catpuccin",
-  priority = 2000,
-  config = function()
-    vim.cmd.colorscheme 'catppuccin-macchiato'
-  end,
-}
+-- return {
+--   "catppuccin/nvim",
+--   name = "catpuccin",
+--   priority = 2000,
+--   config = function()
+--     vim.cmd.colorscheme 'catppuccin-macchiato'
+--   end,
+-- }
+return { 'ellisonleao/gruvbox.nvim', priority = 2000, config = true }
+-- return {
+--   'catppuccin/nvim',
+--   name = 'catpuccin',
+--   priority = 2000,
+--   config = function()
+--     vim.cmd.colorscheme 'catppuccin-macchiato'
+--   end,
+-- }
