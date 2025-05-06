@@ -26,7 +26,7 @@ return {
     },
     {
       '<leader>fg',
-      '<cmd>FzfLua grep_project<cr>',
+      '<cmd>FzfLua live_grep_glob<cr>',
       desc = 'Find grep',
     },
     {
@@ -57,6 +57,11 @@ return {
     {
       '<leader>cr',
       '<cmd>FzfLua lsp_references<cr>',
+      desc = 'Find code references',
+    },
+    {
+      '<leader>fc',
+      '<cmd>FzfLua git_status<cr>',
       desc = 'Find code references',
     },
   },
